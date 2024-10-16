@@ -1,0 +1,127 @@
+/* Presets (Make all browsers have similar styling) */
+
+* {
+    font-family: 'Heebo', "Trebuchet MS", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    padding-inline: calc(2rem + 5vw);
+}
+
+/* Header (Nav bar, logo, menu button) */
+
+nav {
+    padding-left: 2vw;
+}
+
+.nav-ul li {
+    margin-block: 0.5rem;
+    padding: 1rem;
+    font-size: calc(0.7rem + 0.5vw);
+    list-style: none;
+}
+
+.logo img {
+    display: inline-block;
+}
+
+.nav-ul li a {
+    padding: 1rem;
+    outline-color: transparent;
+}
+
+.nav-ul li a:link, .nav-ul li a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-ul li a:hover {
+    background-color: rgb(173, 67, 67);
+    border-radius: 0.5rem;
+    color: rgb(243, 204, 204);
+}
+
+.nav-ul li a:active {
+    color: rgb(196, 129, 129);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 680px) {
+
+    nav {
+        display: grid;
+        grid-template-areas:
+            "logo menu-button"
+            "nav nav";
+        grid-template-columns: 1fr 1fr;
+    } 
+    
+    .logo {
+        grid-area: logo;
+    }
+
+    .menu-button {
+        grid-area: menu-button;
+        justify-self: right;
+        display: inline-block;
+        margin: auto 30px;
+        filter: contrast(200);
+    }
+
+    .nav-ul {
+        display: none;
+        grid-area: nav;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-ul li {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 681px) {
+
+    nav {
+        display: flex;
+        justify-items: start;
+    }
+
+    .nav-ul {
+        display: flex;
+        justify-items: start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-ul li {
+        display: inline-block;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
+
+header {
+    background:rgb(211, 79, 79);
+    position: sticky;
+    top: 0;
+    margin: -1rem 0 3rem;
+    width: 100vw;
+}
+
+.main-banner {
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+}
+
+.main-banner h1 {
+    font-family: 'Heebo', "Trebuchet MS", sans-serif;
+    font-size: calc(3rem + 3vw);
+}
