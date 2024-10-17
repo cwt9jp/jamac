@@ -37,14 +37,18 @@ nav {
 
 nav *:focus {
     outline: 2px solid white;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .nav-ul li {
-    margin-block: 0.5rem;
-    padding: 1rem;
-    font-size: calc(0.7rem + 0.5vw);
+    margin-block: 0.5em;
+    padding: 1em;
+    font-size: calc(0.7em + 0.5vw);
     list-style: none;
+}
+
+.logo {
+    height: 0;
 }
 
 .logo img {
@@ -52,7 +56,7 @@ nav *:focus {
 }
 
 .nav-ul li a {
-    padding: 1rem;
+    padding: 1em;
     outline-color: transparent;
 }
 
@@ -63,7 +67,7 @@ nav *:focus {
 
 .nav-ul li a:focus {
     outline: 2px solid white;
-    border-radius: 5px;
+    border-radius: 0.5rem;
 }
 
 .nav-ul li a:hover {
@@ -114,7 +118,7 @@ nav *:focus {
         justify-self: right;
         display: inline-block;
         margin: auto 30px;
-        
+
         filter: contrast(200);
         background-color: transparent;
         border: none;
@@ -161,7 +165,7 @@ header {
     background: rgb(215, 105, 105);
     position: sticky;
     top: 0;
-    margin: -1rem 0 0;
+    margin: -0.5rem 0 0;
     width: 100vw;
     max-width: 100%;
 }
@@ -194,7 +198,7 @@ header {
     padding: 0 max(20px, 1.5vw);
     background-color: rgb(88, 88, 183);
     color: white;
-    border-radius: 20px;
+    border-radius: 0.5rem;
 }
 
 .team-events-grid {
@@ -209,5 +213,5 @@ header {
     padding: 0 max(20px, 1.5vw);
     background-color: rgb(211, 79, 79);
     color: white;
-    border-radius: 20px;
+    border-radius: 0.5rem;
 }
