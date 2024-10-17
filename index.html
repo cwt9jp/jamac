@@ -9,23 +9,25 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="./styles/style.css" />
-        <script type="module" src=".scripts/script.js"></script>
-        <!-- <link rel="icon" href="./images/" type="image/x-icon"> !-->
+        <link rel="stylesheet" href="styles/style.css" />
+        <script type="module" src="scripts/script.js"></script>
+        <!-- <link rel="icon" href="./images/" type="image/x-icon"> -->
     </head>
     <body>
         <header>
                 <nav>
-                        <a class="logo"><img src="" alt="JAMAC logo" width="70"/></a>
+                        <a class="logo" href=""><img src="images/logo.svg" alt="JAMAC logo" width="70"/></a>
 
-                        <img 
+                        <button type="button" class="menu-button" id="menu-button">
+                            <img 
                             alt="Menu button"
                             title="Open menu"
                             src="images/menu.svg"
-                            class="menu-button"
-                        />
+                            />
+                        </button>
+                        
 
-                        <ul class="nav-ul">
+                        <ul class="nav-ul" id="nav-ul">
                                 <li><a href="">Fall 2024</a></li>
                                 <li><a href="">Spring 2025</a></li>
                                 <li><a href="">Previous Competitions</a></li>
@@ -45,7 +47,7 @@
 
             <h2>What is JAMAC?</h2>
             <p>
-                JAMAC is a low-stakes, fun mathematics competition held for middle schoolers in the Albemarle region, organized by the Albemarle High School Math Club
+                JAMAC is a low-stakes, fun mathematics competition for middle schoolers in the Albemarle region, organized by the Albemarle High School Math Club
                 and Math Honor Society. The competition consists of individual and team events, further explained below:
             </p>
 
@@ -54,7 +56,58 @@
                 <div>
                     <h4>Algebra Round</h4>
                     <p>15 questions, 30 minutes</p>
-                    <p>Problems consist of variables and equations, where all givens</p>
+                    <p>
+                        Problems consist of functions, equations, and algebraic manipulation involving
+                        one or more variables, that require converting problems into math equations.
+                    </p>
+                </div>
+                <div>
+                    <h4>Geometry Round</h4>
+                    <p>15 questions, 30 minutes</p>
+                    <p>
+                        Problems require the use of algebraic problem-solving skills to find areas, volumes,
+                        and side lengths of various 2d and 3d shapes.
+                    </p>
+                </div>
+                <div>
+                    <h4>Number Theory Round</h4>
+                    <p>15 questions, 30 minutes</p>
+                    <p>
+                        Problems consist of numeric manipulation and knowledge of geometric and arithmetic
+                        sequences and summations. Counting and probability is also included in this section.
+                    </p>
+                </div>
+                <div>
+                    <h4>Finals Round</h4>
+                    <p>15 questions, 30 minutes</p>
+                    <p>
+                        Problems consist of all three topics: Algebra, Geometry, and Number Theory, but require
+                        more advanced problem-solving techniques. Only the top 12 mathletes are able to compete
+                        in this round.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Team events</h3>
+            <div class="team-events-grid">
+                <div>
+                    <h4>Team Round</h4>
+                    <p>10 questions, 15 minutes</p>
+                    <p>
+                        Problems on a wide variety of math-related topics, fairly hard but designed to be solved
+                        by a team of four people. Teams have to decide how to split up problems, as problem difficulty
+                        increases rapidly from problems 1 to 10.
+                    </p>
+                </div>
+                <div>
+                    <h4>Guts Round</h4>
+                    <p>30 questions, 30 minutes</p>
+                    <p>
+                        Guts round (also on various math-related topics) is a fast-paced, chaotic team event.
+                        Problems are given out in groups of three, and the next set of problems is only available after
+                        submitting the previous set. Later sets are harder than previous sets, and there is live grading
+                        for the first five sets.
+                    </p>
                 </div>
             </div>
         </main>
