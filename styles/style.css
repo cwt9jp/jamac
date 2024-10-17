@@ -1,4 +1,4 @@
-/* Presets (Make all browsers have similar styling) */
+/* General styling */
 
 * {
     font-family: 'Heebo', "Trebuchet MS", sans-serif;
@@ -12,10 +12,32 @@ main {
     padding-inline: calc(2rem + 5vw);
 }
 
+a:link {
+    color: rgb(88, 88, 183);
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+    font-weight: bold;
+}
+
 /* Header (Nav bar, logo, menu button) */
 
 nav {
     padding-left: 2vw;
+}
+
+nav *:focus {
+    outline: 2px solid white;
+    border-radius: 5px;
 }
 
 .nav-ul li {
@@ -37,6 +59,11 @@ nav {
 .nav-ul li a:link, .nav-ul li a:visited {
     text-decoration: none;
     color: white;
+}
+
+.nav-ul li a:focus {
+    outline: 2px solid white;
+    border-radius: 5px;
 }
 
 .nav-ul li a:hover {
@@ -62,14 +89,8 @@ nav {
     
     .logo {
         grid-area: logo;
-    }
-
-    .menu-button {
-        grid-area: menu-button;
-        justify-self: right;
         display: inline-block;
-        margin: auto 30px;
-        filter: contrast(200);
+        width: fit-content;
     }
 
     .nav-ul {
@@ -81,6 +102,35 @@ nav {
 
     .nav-ul li {
         padding-left: 0;
+    }
+
+    .menu-button img {
+        display: block;
+    }
+
+    .menu-button {
+        padding: 5px;
+        grid-area: menu-button;
+        justify-self: right;
+        display: inline-block;
+        margin: auto 30px;
+        
+        filter: contrast(200);
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+
+        cursor: pointer;
+    }
+
+    .menu-button:hover {
+        background-color: rgb(173, 67, 67);
+        filter: none;
+    }
+
+    .menu-button:active {
+        background-color: rgb(142, 55, 55);
+        filter: brightness(0.7);
     }
 }
 
@@ -108,20 +158,56 @@ nav {
 }
 
 header {
-    background:rgb(211, 79, 79);
+    background: rgb(215, 105, 105);
     position: sticky;
     top: 0;
-    margin: -1rem 0 3rem;
+    margin: -1rem 0 0;
     width: 100vw;
+    max-width: 100%;
 }
+
+/* Main Banner */
 
 .main-banner {
     width: 100vw;
     height: 30vh;
     text-align: center;
+    max-width: 100%;
+    margin-bottom: 10vh
 }
 
 .main-banner h1 {
-    font-family: 'Heebo', "Trebuchet MS", sans-serif;
-    font-size: calc(3rem + 3vw);
+    font-size: calc(4.5rem + 2vw);
+}
+
+/* Grid */
+
+.individual-events-grid {
+    padding-block: 1vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 3vw;
+}
+
+.individual-events-grid div {
+    padding: 0 max(20px, 1.5vw);
+    background-color: rgb(88, 88, 183);
+    color: white;
+    border-radius: 20px;
+}
+
+.team-events-grid {
+    padding-block: 1vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 3vw;
+}
+
+.team-events-grid div {
+    padding: 0 max(20px, 1.5vw);
+    background-color: rgb(211, 79, 79);
+    color: white;
+    border-radius: 20px;
 }
