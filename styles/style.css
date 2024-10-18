@@ -33,6 +33,7 @@ a:active {
 
 nav {
     padding-left: 2vw;
+    min-height: 4rem;
 }
 
 nav *:focus {
@@ -89,6 +90,7 @@ nav *:focus {
             "logo menu-button"
             "nav nav";
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(5rem, max-content);
     } 
     
     .logo {
@@ -113,16 +115,16 @@ nav *:focus {
     }
 
     .menu-button {
-        padding: 5px;
+        padding: 0.5rem;
         grid-area: menu-button;
         justify-self: right;
         display: inline-block;
-        margin: auto 30px;
+        margin: auto 2rem;
 
         filter: contrast(200);
         background-color: transparent;
         border: none;
-        border-radius: 5px;
+        border-radius: 0.4rem;
 
         cursor: pointer;
     }
@@ -198,7 +200,17 @@ header {
     padding: 0 max(20px, 1.5vw);
     background-color: rgb(88, 88, 183);
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: none;
+    width: auto;
+
+    transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.individual-events-grid div:hover {
+    cursor: pointer;
+    background-color: rgb(52, 52, 109);
+    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
 }
 
 .team-events-grid {
@@ -213,5 +225,13 @@ header {
     padding: 0 max(20px, 1.5vw);
     background-color: rgb(211, 79, 79);
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+
+    transition: all 0.2s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.team-events-grid div:hover {
+    cursor: pointer;
+    background-color: rgb(132, 53, 53);
+    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
 }
