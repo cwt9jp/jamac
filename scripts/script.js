@@ -30,11 +30,7 @@ function expandEvent(event) {
 
         div.classList.add("showing");
         contractButton.style.visibility = "initial";
-
-        if (!event.style.flex) {
-            event.style.cursor = "auto"
-            event.style.flex = '100%';
-        }
+        event.classList.add("expanded");
     }
     contracting = false;
 }
@@ -46,9 +42,5 @@ function contractEvent(button) {
 
     div.classList.remove("showing");
     button.style.visibility = "";
-
-    if (event.style.flex) {
-        event.style.flex = "";
-        event.style.cursor = "";
-    }
+    event.classList.remove("expanded");
 }
