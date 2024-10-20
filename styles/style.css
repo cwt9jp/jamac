@@ -196,7 +196,8 @@ header {
 
 .main-banner {
     width: 100vw;
-    height: 30vh;
+    height: max-content;
+    padding-block: 5vh;
     text-align: center;
     max-width: 100%;
     margin-bottom: 10vh;
@@ -217,9 +218,9 @@ header {
     gap: 2em;
 }
 
-.individual-events-grid div {
+.individual-events-grid > div {
     flex: 200px;
-    padding: 0 max(20px, 1.5vw);
+    padding: 0 max(20px, 1.5vw) 20px;
     background-color: rgb(88, 88, 183);
     color: white;
     border-radius: 1rem;
@@ -229,13 +230,7 @@ header {
     transition:
         background-color 0.2s cubic-bezier(0.61, 1, 0.88, 1),
         box-shadow 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-        flex 1.5s cubic-bezier(0.37, 0, 0.63, 1);
-}
-
-.individual-events-grid div:hover {
-    cursor: pointer;
-    background-color: rgb(52, 52, 109);
-    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+        flex 1s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .team-events-grid {
@@ -245,7 +240,7 @@ header {
     gap: 2vw;
 }
 
-.team-events-grid div {
+.team-events-grid > div {
     flex: 200px;
     padding: 0 max(20px, 1.5vw);
     background-color: rgb(211, 79, 79);
@@ -255,33 +250,51 @@ header {
     transition:
         background-color 0.2s cubic-bezier(0.61, 1, 0.88, 1),
         box-shadow 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-        flex 1.5s cubic-bezier(0.37, 0, 0.63, 1);
+        flex 1s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
-.team-events-grid div:hover {
-    cursor: pointer;
-    background-color: rgb(132, 53, 53);
-    box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+@media screen and (hover: hover) {
+
+    .individual-events-grid > div:hover {
+        cursor: pointer;
+        background-color: rgb(52, 52, 109);
+        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+    }
+
+    .team-events-grid > div:hover {
+        cursor: pointer;
+        background-color: rgb(132, 53, 53);
+        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+    }
 }
 
 /* Event styling/transitioning */
+
+.expanded {
+    background-color: rgb(88, 88, 183) !important;
+    cursor: auto !important;
+    box-shadow: none !important;
+    flex: 100% !important;
+}
 
 .event {
     position: relative;
 }
 
+.event a {
+    color: white;
+}
+
 .event div,
 .event div:hover {
     visibility: hidden;
-    background-color: transparent;
     max-height: 0;
-    box-shadow: none;
     margin: 0;
     padding: 0;
 
     transition:
-        max-height 1.5s cubic-bezier(0.37, 0, 0.63, 1),
-        visibility 1.5s cubic-bezier(0.37, 0, 0.63, 1);
+        max-height 1s cubic-bezier(0.37, 0, 0.63, 1),
+        visibility 1s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .event .showing,
@@ -308,7 +321,7 @@ header {
         display: block;
     }
 
-    transition: visibility 1.5s cubic-bezier(0.37, 0, 0.63, 1);
+    transition: visibility 1s cubic-bezier(0.37, 0, 0.63, 1);
 }
 
 .contract-button:focus {
