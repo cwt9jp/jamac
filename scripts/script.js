@@ -25,7 +25,6 @@ function toggleMenu() {
 
 function expandEvent(event) {
     if (!contracting) {
-        console.log("expandEvent run");
         let div = event.getElementsByTagName("div")[0];
         let contractButton = event.getElementsByTagName("button")[0];
 

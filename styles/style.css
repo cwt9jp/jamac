@@ -1,6 +1,6 @@
 /* General styling */
 
-* {
+html {
     font-family: 'Heebo', "Trebuchet MS", sans-serif;
 }
 
@@ -27,6 +27,22 @@ a:hover {
 a:active {
     color: red;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1.1em;
 }
 
 /* Header (Nav bar, logo, menu button) */
@@ -183,11 +199,13 @@ header {
     height: 30vh;
     text-align: center;
     max-width: 100%;
-    margin-bottom: 10vh
+    margin-bottom: 10vh;
+    display: grid;
 }
 
 .main-banner h1 {
     font-size: calc(4.5rem + 2vw);
+    margin: auto;
 }
 
 /* Grid */
@@ -196,7 +214,7 @@ header {
     padding-block: 1vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 2vw;
+    gap: 2em;
 }
 
 .individual-events-grid div {
