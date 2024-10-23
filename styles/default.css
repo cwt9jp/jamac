@@ -10,6 +10,7 @@ body {
 
 main {
     padding-inline: calc(2rem + 5vw);
+    padding-bottom: 2em;
 }
 
 a:link {
@@ -27,6 +28,10 @@ a:hover {
 a:active {
     color: red;
     font-weight: bold;
+}
+
+h1 {
+    font-size: 4em;
 }
 
 h2 {
@@ -69,7 +74,7 @@ nav *:focus {
 }
 
 .logo {
-    height: 0;
+    height: min-content;
 }
 
 .logo img {
@@ -197,7 +202,7 @@ header {
 .main-banner {
     width: 100vw;
     height: max-content;
-    padding-block: 5vh;
+    padding-block: 7vh;
     text-align: center;
     max-width: 100%;
     margin-bottom: 10vh;
@@ -209,138 +214,14 @@ header {
     margin: auto;
 }
 
-/* Grid */
-
-.individual-events-grid {
-    padding-block: 1vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-}
-
-.individual-events-grid > div {
-    flex: 200px;
-    padding: 0 max(20px, 1.5vw) 20px;
-    background-color: rgb(88, 88, 183);
+/* Footer */
+footer {
+    background-color: rgb(84, 84, 84);
     color: white;
-    border-radius: 1rem;
-    box-shadow: none;
-    width: auto;
-
-    transition:
-        background-color 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-        box-shadow 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-        flex 1s cubic-bezier(0.37, 0, 0.63, 1);
+    padding-block: 1em;
+    padding-inline: 2em;
 }
 
-.team-events-grid {
-    padding-block: 1vw;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2vw;
-}
-
-.team-events-grid > div {
-    flex: 200px;
-    padding: 0 max(20px, 1.5vw);
-    background-color: rgb(211, 79, 79);
-    color: white;
-    border-radius: 1rem;
-
-    transition:
-        background-color 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-        box-shadow 0.2s cubic-bezier(0.61, 1, 0.88, 1),
-        flex 1s cubic-bezier(0.37, 0, 0.63, 1);
-}
-
-@media screen and (hover: hover) {
-
-    .individual-events-grid > div:hover {
-        cursor: pointer;
-        background-color: rgb(52, 52, 109);
-        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
-    }
-
-    .team-events-grid > div:hover {
-        cursor: pointer;
-        background-color: rgb(132, 53, 53);
-        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
-    }
-}
-
-/* Event styling/transitioning */
-
-.expanded {
-    background-color: rgb(88, 88, 183) !important;
-    cursor: auto !important;
-    box-shadow: none !important;
-    flex: 100% !important;
-}
-
-.event {
-    position: relative;
-}
-
-.event a {
-    color: white;
-}
-
-.event div,
-.event div:hover {
-    visibility: hidden;
-    max-height: 0;
-    margin: 0;
-    padding: 0;
-
-    transition:
-        max-height 1s cubic-bezier(0.37, 0, 0.63, 1),
-        visibility 1s cubic-bezier(0.37, 0, 0.63, 1);
-}
-
-.event .showing,
-.event .showing:hover {
-    cursor: auto;
-    visibility: visible;
-    max-height: 1000px;
-}
-
-.contract-button {
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    visibility: hidden;
-
-    background-color: transparent;
-    border: none;
-    border-radius: 0.5em;
-    padding: 0.5em;
-    height: fit-content;
-
-    & img {
-        filter: contrast(200);
-        display: block;
-    }
-
-    transition: visibility 1s cubic-bezier(0.37, 0, 0.63, 1);
-}
-
-.contract-button:focus {
-    outline: 2px solid white;
-}
-
-.contract-button:hover {
-    background-color: rgba(0, 0, 0, 0.24);
-    cursor: pointer;
-
-    & img {
-        filter: contrast(1.2) hue-rotate(230deg) brightness(0.7);
-    }
-}
-
-.contract-button:active {
-    background-color: rgba(0, 0, 0, 0.35);
-
-    & img {
-        filter: contrast(1.2) hue-rotate(230deg) brightness(0.4);
-    }
+footer a {
+    color: white !important;
 }
