@@ -1,0 +1,155 @@
+@import url(/styles/default.css) layer(default);
+
+/* Grid */
+
+.individual-events-grid {
+    padding-block: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.individual-events-grid > div {
+    background-color: rgb(88, 88, 183);
+}
+
+.team-events-grid {
+    padding-block: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.team-events-grid > div {
+    background-color: rgb(211, 79, 79);
+}
+
+@media screen and (hover: hover) {
+
+    .individual-events-grid > div:hover {
+        cursor: pointer;
+        background-color: rgb(52, 52, 109);
+        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+    }
+
+    .team-events-grid > div:hover {
+        cursor: pointer;
+        background-color: rgb(132, 53, 53);
+        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+    }
+}
+
+/* Event styling/transitioning */
+
+.individual-events-grid .expanded {
+    background-color: rgb(88, 88, 183) !important;
+    cursor: auto !important;
+    box-shadow: none !important;
+    flex: 100% !important;
+}
+
+.team-events-grid .expanded {
+    background-color: rgb(211, 79, 79) !important;
+    cursor: auto !important;
+    box-shadow: none !important;
+    flex: 100% !important;
+}
+
+.event {
+    position: relative;
+    flex: 200px;
+    padding: 0 max(20px, 1.5vw) 20px;
+    color: white;
+    border-radius: 1rem;
+    transition:
+        background-color 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+        box-shadow 0.2s cubic-bezier(0.61, 1, 0.88, 1),
+        flex 1s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.event a {
+    color: white;
+}
+
+.event div,
+.event div:hover {
+    visibility: hidden;
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    transition:
+        max-height 1s cubic-bezier(0.37, 0, 0.63, 1),
+        visibility 1s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.event .showing,
+.event .showing:hover {
+    cursor: auto;
+    visibility: visible;
+    max-height: 1000px;
+}
+
+.contract-button {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    visibility: hidden;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    height: fit-content;
+
+    & img {
+        filter: contrast(200);
+        display: block;
+    }
+
+    transition: visibility 1s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.contract-button:focus {
+    outline: 2px solid white;
+}
+
+@media screen and (hover: hover) {
+
+    .individual-events-grid .event .contract-button:hover {
+        background-color: rgba(0, 0, 0, 0.24);
+        cursor: pointer;
+    
+        & img {
+            filter: contrast(1.2) hue-rotate(230deg) brightness(0.7);
+        }
+    }
+
+    .team-events-grid .event .contract-button:hover {
+        background-color: rgba(0, 0, 0, 0.24);
+        cursor: pointer;
+    
+        & img {
+            filter: contrast(1);
+        }
+    }
+
+}
+
+.individual-events-grid .event .contract-button:active {
+    background-color: rgba(0, 0, 0, 0.35);
+
+    & img {
+        filter: contrast(1.2) hue-rotate(230deg) brightness(0.4);
+    }
+}
+
+.team-events-grid .event .contract-button:active {
+    background-color: rgba(0, 0, 0, 0.35);
+
+    & img {
+        filter: contrast(1) brightness(0.8);
+    }
+}

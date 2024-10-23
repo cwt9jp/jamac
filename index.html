@@ -9,33 +9,34 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 
-        <link rel="stylesheet" href="styles/style.css" />
+        <link type="text/css" rel="stylesheet" href="/styles/main.css" />
 
-        <script type="module" src="scripts/script.js"></script>
+        <script type="module" src="/scripts/default.js"></script>
+        <script type="module" src="/scripts/main.js"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <!-- <link rel="icon" href="./images/" type="image/x-icon"> -->
+        
+        <!-- <link rel="icon" href="/images/" type="image/x-icon"> -->
     </head>
     <body>
         <header>
-                <nav>
-                        <a class="logo" href=""><img src="images/logo.svg" alt="JAMAC logo" width="70"/></a>
+            <nav>
+                <a class="logo" href=""><img src="/images/logo.svg" alt="JAMAC logo" width="70"/></a>
 
-                        <button type="button" class="menu-button" id="menu-button">
-                            <img 
+                    <button type="button" class="menu-button" id="menu-button">
+                        <img 
                             id="menu-image"
                             alt="Menu button"
                             title="Open menu"
-                            src="images/menu.svg"
-                            />
-                        </button>
-                        
+                            src="/images/menu.svg"
+                        />
+                    </button> 
 
-                        <ul class="nav-ul" id="nav-ul">
-                                <li><a href="">Fall 2024</a></li>
-                                <li><a href="spring-2025/">Spring 2025</a></li>
-                                <li><a href="">Previous Competitions</a></li>
-                        </ul>
-                </nav>
+                    <ul class="nav-ul" id="nav-ul">
+                        <li><a href="/fall-2024/">Fall 2024</a></li>
+                        <li><a href="/spring-2025/">Spring 2025</a></li>
+                        <li><a href="/previous-competitions">Previous Competitions</a></li>
+                    </ul>
+            </nav>
         </header>
         <section class="main-banner">
             <h1>JAMAC 2024-25</h1>
@@ -45,7 +46,7 @@
             <p>
                 The Albemarle Math Honor Society and Math Club are hosting two JAMAC events this year,
                 one in the fall and one in the spring. For more information on these events,
-                please check out our <a href="fall-2024/">Fall 2024</a> and <a href="spring-2025/">Spring 2025</a> webpages.
+                please check out our <a href="/fall-2024/">Fall 2024</a> and <a href="/spring-2025/">Spring 2025</a> webpages.
             </p>
 
             <h2>What is JAMAC?</h2>
@@ -59,7 +60,7 @@
             <div class="individual-events-grid">
                 <div class="event">
                     <button type="button" class="contract-button" title="Contract event">
-                        <img src="images/exit.svg" />
+                        <img src="/images/exit.svg" />
                     </button>
                     <h4>Algebra Round</h4>
                     <p>15 questions, 30 minutes</p>
@@ -91,7 +92,7 @@
                 </div>
                 <div class="event">
                     <button type="button" class="contract-button" title="Contract event">
-                        <img src="images/exit.svg" />
+                        <img src="/images/exit.svg" />
                     </button>
                     <h4>Geometry Round</h4>
                     <p>15 questions, 30 minutes</p>
@@ -121,13 +122,13 @@
                         <p>
                             <b>Hard:</b> Captain Picard's new combadge is pictured in the figure shown. Point D is the center of the circle.
                             \(\angle{ABD}\) and \(\angle{ACD}\) are \(20^\circ .\) What is the value of \(x\)?
-                            <a href="images/geometry-example-diagram.svg" target="_blank">See picture here</a> (2024 Geometry Round, #9)
+                            <a href="/images/geometry-example-diagram.svg" target="_blank">See picture here</a> (2024 Geometry Round, #9)
                         </p>
                     </div>
                 </div>
                 <div class="event">
                     <button type="button" class="contract-button" title="Contract event">
-                        <img src="images/exit.svg" />
+                        <img src="/images/exit.svg" />
                     </button>
                     <h4>Number Theory Round</h4>
                     <p>15 questions, 30 minutes</p>
@@ -161,7 +162,7 @@
                 </div>
                 <div class="event">
                     <button type="button" class="contract-button" title="Contract event">
-                        <img src="images/exit.svg" />
+                        <img src="/images/exit.svg" />
                     </button>
                     <h4>Finals Round</h4>
                     <p>15 questions, 30 minutes</p>
@@ -194,7 +195,7 @@
                             of his floor plan. His floor plan is an enclosed space \(USRT,\) where \(\overline{US}\) and
                             \(\overline{UT}\) are line segments each of length \(2,\) and \(\angle TUS = 60^\circ .\) Arcs
                             \(\overset{\huge\frown}{TR}\) and \(\overset{\huge\frown}{SR}\) are each one-sixth of a circle with radius \(2.\)
-                            What is the area of his floor? <a href="images/finals-example-diagram.svg" target="_blank">See diagram here</a>
+                            What is the area of his floor? <a href="/images/finals-example-diagram.svg" target="_blank">See diagram here</a>
                             (2024 Finals, #10)
                         </p>
                     </div>
@@ -205,7 +206,7 @@
             <div class="team-events-grid">
                 <div class="event">
                     <button type="button" class="contract-button" title="Contract event">
-                        <img src="images/exit.svg" />
+                        <img src="/images/exit.svg" />
                     </button>
                     <h4>Team Round</h4>
                     <p>10 questions, 15 minutes</p>
@@ -243,7 +244,7 @@
                 </div>
                 <div class="event">
                     <button type="button" class="contract-button" title="Contract event">
-                        <img src="images/exit.svg" />
+                        <img src="/images/exit.svg" />
                     </button>
                     <h4>Guts Round</h4>
                     <p>30 questions, 30 minutes</p>
@@ -310,13 +311,15 @@
                 will be ranked higher. On the other hand, if both contestants have the same score, the first contestant will be ranked
                 higher.
             </p>
-
             <p>
-                These tiebreaks will only be used to decide who wins the above awards. Ties below that will not
-                be resolved.
+                We only break ties if an award can be given to multiple people (the overall individual tiebreak is the Finals Round). Team
+                tiebreaks will work similarly to individual tiebreaks, with teams instead, and there will be four questions.
             </p>
         </main>
-
-
+        <footer>
+            <p>
+                &copy; 2024 Albemarle Math Club. Use of problems is allowed under the <a href="https://opensource.org/license/mit">MIT License</a>.
+            </p>
+        </footer>
     </body>
 </html>
