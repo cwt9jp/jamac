@@ -29,13 +29,17 @@
     .individual-events-grid > div:hover {
         cursor: pointer;
         background-color: rgb(52, 52, 109);
-        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+        box-shadow:
+            0.5rem 0.5rem rgba(0, 0, 0, 0.482),
+            0 0 20px rgba(0, 0, 0, 0.3);
     }
 
     .team-events-grid > div:hover {
         cursor: pointer;
         background-color: rgb(132, 53, 53);
-        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.482);
+        box-shadow:
+            0.5rem 0.5rem rgba(0, 0, 0, 0.482),
+            0 0 20px rgba(0, 0, 0, 0.3);
     }
 }
 
@@ -44,7 +48,9 @@
 .individual-events-grid .expanded {
     background-color: rgb(88, 88, 183) !important;
     cursor: auto !important;
-    box-shadow: none !important;
+    box-shadow:
+        0 0 0 transparent, 
+        0 0 20px rgba(0, 0, 0, 0.3) !important;
     flex: 100% !important;
 }
 
@@ -61,6 +67,9 @@
     padding: 0 max(20px, 1.5vw) 20px;
     color: white;
     border-radius: 1rem;
+    box-shadow:
+        0 0 0 transparent,
+        0 0 20px rgba(0, 0, 0, 0.3);
     transition:
         background-color 0.2s cubic-bezier(0.61, 1, 0.88, 1),
         box-shadow 0.2s cubic-bezier(0.61, 1, 0.88, 1),
