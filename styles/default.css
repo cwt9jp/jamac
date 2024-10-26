@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Heebo', "Trebuchet MS", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,15 @@ a:visited {
     color: purple;
 }
 
+*:focus {
+    border-radius: 2px;
+    outline: 2px solid white;
+}
+
+main *:focus {
+    outline: 2px solid black;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -35,7 +45,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
 }
 
 h3 {
@@ -74,11 +84,11 @@ nav *:focus {
 }
 
 .logo {
-    height: min-content;
+    margin: auto 0;
 }
 
 .logo img {
-    display: inline-block;
+    display: block;
 }
 
 .nav-ul li a {
