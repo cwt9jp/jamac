@@ -67,7 +67,6 @@ header {
 }
 
 nav {
-    padding-left: 2vw;
     min-height: 4rem;
 }
 
@@ -79,12 +78,12 @@ nav *:focus {
 .nav-ul li {
     margin-block: 0.5em;
     padding: 1em;
-    font-size: calc(0.7em + 0.5vw);
+    font-size: calc(1em + 0.2vw);
     list-style: none;
 }
 
 .logo {
-    margin: auto 0;
+    margin: auto 2vw;
 }
 
 .logo img {
@@ -142,7 +141,7 @@ nav *:focus {
     }
 
     .nav-ul li {
-        padding-left: 0;
+        padding-left: 10px;
     }
 
     .menu-button img {
@@ -154,7 +153,7 @@ nav *:focus {
         grid-area: menu-button;
         justify-self: right;
         display: inline-block;
-        margin: auto 2rem;
+        margin: auto 5vw;
 
         filter: contrast(200);
         background-color: transparent;

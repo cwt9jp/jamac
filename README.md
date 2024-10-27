@@ -9,3 +9,6 @@ Currently the page's JS and CSS are not linked properly, as we are in process of
 - [ ] Move site to new DNS
 - [ ] Get JAMAC Logo (currently placeholder) and `main-banner` image
 - [ ] Get more previous competitions
+- [ ] Decide how to do registration for Fall JAMAC (HTML form or Google form?)
+- [ ] How do we decide overall team??
+- [ ] Schedule seems a little long... too much time for grading (we can grade during competitions and tiebreaks)

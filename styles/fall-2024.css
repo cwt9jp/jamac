@@ -13,7 +13,7 @@
 table {
     border-collapse: collapse;
     font-size: 0.9em;
-    width: min(450px, 60vw);
+    width: min(450px, calc(90vw - 4rem));
     text-align: left;
 }
 
