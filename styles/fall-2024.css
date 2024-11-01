@@ -1,9 +1,17 @@
 @import url(/styles/default.css) layer(default);
 
+/* iframe */
+
+iframe {
+    margin-top: auto;
+    width: min(450px, calc(90vw - 4rem));
+    height: 70vh;
+}
+
 /* Table */
 
 .table-wrapper {
-    margin: 25px 0;
+    margin: 25px auto;
     display: inline-block;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
