@@ -1,7 +1,6 @@
 # JAMAC Website Repo
 
-This is the JAMAC (**J**unior **A**lbemarle **Ma**th **C**ompetition) website repository, currently hosted at [cwt9jp.github.io/jamac](https://cwt9jp.github.io/jamac/).
-Currently, the page's JS and CSS are not linked properly, as we are moving the website to one under a root domain.
+This is the JAMAC (**J**unior **A**lbemarle **Ma**th **C**ompetition) website repository, currently hosted at [albemarlejamac.org](https://albemarlejamac.org).
 
 ## Things to do
 
