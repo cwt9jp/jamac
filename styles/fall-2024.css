@@ -21,14 +21,13 @@ iframe {
 table {
     border-collapse: collapse;
     font-size: 0.9em;
-    width: calc(90vw - 4rem);
+    width: min(450px, calc(90vw - 4rem));
     text-align: left;
 }
 
 thead tr {
     background-color: rgb(88, 88, 183);
     color: #ffffff;
-    border-inline: 2px solid rgb(88, 88, 183);
 }
 
 th {
@@ -38,11 +37,10 @@ th {
 
 td {
     padding: 12px 15px;
-    border-inline: 2px solid rgb(88, 88, 183);
 }
 
 tbody tr {
-    border-bottom: 2px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 tbody tr:nth-of-type(even) {

@@ -12,7 +12,7 @@
 
 table {
     border-collapse: collapse;
-    font-size: 0.9em;
+    font-size: calc(0.1em + 0.7vw);
     width: calc(90vw - 4rem);
     text-align: center;
 }
@@ -24,17 +24,17 @@ thead tr {
 
 th {
     padding: 20px 15px;
-    font-size: medium;
-    border: 3px solid rgb(88, 88, 183);
+    font-size: calc(0.2em + 0.8vw);
+    border-inline: 3px solid rgb(88, 88, 183);
 }
 
 td {
     padding: 12px 15px;
-    border: 3px solid rgb(88, 88, 183);
+    border-inline: 3px solid rgb(88, 88, 183);
 }
 
 tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 2px solid #b9b9b9;
 }
 
 tbody tr:nth-of-type(even) {
