@@ -5,10 +5,6 @@ Currently, the page's JS and CSS are not linked properly, as we are moving the w
 
 ## Things to do
 
-- [ ] Decide on a DNS provider (likely Cloudflare) and domain name
-- [ ] Move site to new DNS
-- [ ] Get the JAMAC Logo (currently placeholder) and `main-banner` image
-- [x] Get more previous competitions
-- [ ] Decide how to do registration for Fall JAMAC (HTML form or Google form?)
 - [ ] How do we decide overall team??
-- [ ] Schedule seems a little long... too much time for grading (we can grade during competitions and tiebreaks)
+- [ ] Finish previous-competiton page
+- [ ] Now that we make our previous competitions avaliable to the public, we should try to never exactly repeat problems

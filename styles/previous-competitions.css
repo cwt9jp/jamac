@@ -1,0 +1,44 @@
+@import url(/styles/default.css) layer(default);
+
+/* Table */
+
+.table-wrapper {
+    margin: 25px auto;
+    display: inline-block;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: calc(90vw - 4rem);
+    text-align: left;
+}
+
+thead tr {
+    background-color: rgb(88, 88, 183);
+    color: #ffffff;
+}
+
+th {
+    padding: 20px 15px;
+    font-size: medium;
+}
+
+td {
+    padding: 12px 15px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(88, 88, 183);
+}
