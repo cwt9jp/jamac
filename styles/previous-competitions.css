@@ -1,13 +1,5 @@
 @import url(/styles/default.css) layer(default);
 
-h2 {
-    font-size: 1.4em;
-}
-
-h3 {
-    font-size: 1.2em;
-}
-
 /* Competition styling and transitions */
 
 .year-wrapper {
