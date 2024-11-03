@@ -4,7 +4,7 @@
 
 iframe {
     margin-top: auto;
-    width: min(450px, calc(90vw - 4rem));
+    width: min(450px, calc(90vw - 5rem));
     height: 70vh;
 }
 
@@ -21,7 +21,7 @@ iframe {
 table {
     border-collapse: collapse;
     font-size: 0.9em;
-    width: min(450px, calc(90vw - 4rem));
+    width: min(450px, calc(90vw - 5rem));
     text-align: left;
 }
 

@@ -17,7 +17,7 @@ h3 {
 
     padding: 0 max(15px, 1.2vw) 0;
     margin-block: 20px;
-    width: min(400px, calc(90vw - 4rem));
+    width: min(400px, calc(90vw - 7rem));
 }
 
 .year-wrapper *:focus {
