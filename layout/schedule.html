@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Schedule</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+
+        <style>
+            /* Table */
+
+            html {
+                font-family: 'Heebo', sans-serif;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            .table-wrapper {
+                margin: 25px auto;
+                display: inline-block;
+                border-radius: 20px 20px 0 0;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                overflow: hidden;
+            }
+
+            table {
+                border-collapse: collapse;
+                font-size: 0.9em;
+                width: 500px;
+                text-align: left;
+            }
+
+            thead tr {
+                background-color: rgb(88, 88, 183);
+                color: #ffffff;
+            }
+
+            th {
+                padding: 20px 15px;
+                font-size: medium;
+            }
+
+            td {
+                padding: 12px 15px;
+            }
+
+            tbody tr {
+                border-bottom: 1px solid #dddddd;
+            }
+
+            tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            tbody tr:last-of-type {
+                border-bottom: 2px solid rgb(88, 88, 183);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Time duration</th>
+                        <th scope="col">Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <time datetime="08:30">8:30</time>-<time datetime="09:00">9:00 AM</time>
+                        </td>
+                        <td>
+                            Registration
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="09:00">9:00</time>-<time datetime="09:15">9:15</time>
+                        </td>
+                        <td>
+                            Introduction
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="09:15">9:15</time>-<time datetime="09:45">9:45</time>
+                        </td>
+                        <td>
+                            Algebra Round
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="09:45">9:45</time>-<time datetime="09:55">9:55</time>
+                        </td>
+                        <td>
+                            Break
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="09:55">9:55</time>-<time datetime="10:25">10:25</time>
+                        </td>
+                        <td>
+                            Geometry Round
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="10:25">10:25</time>-<time datetime="10:30">10:30</time>
+                        </td>
+                        <td>
+                            Break
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="10:30">10:30</time>-<time datetime="11:00">11:00</time>
+                        </td>
+                        <td>
+                            Number Theory Round
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="11:00">11:00</time>-<time datetime="11:30">11:30</time>
+                        </td>
+                        <td>
+                            Break
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="11:30">11:30</time>-<time datetime="12:00">12:00 PM</time>
+                        </td>
+                        <td>
+                            Team Round
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="12:00">12:00</time>-<time datetime="12:50">12:50</time>
+                        </td>
+                        <td>
+                            Lunch + Candy Events
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="12:50">12:50</time>-<time datetime="13:35">1:35</time>
+                        </td>
+                        <td>
+                            24 for Non-Tiebreakers
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="12:50">12:50</time>-<time datetime="13:35">1:35</time>
+                        </td>
+                        <td>
+                            Tiebreak Round (Finals included)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="13:35">1:35</time>-<time datetime="13:45">1:45</time>
+                        </td>
+                        <td>
+                            Break
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="13:45">1:45</time>-<time datetime="14:35">2:35</time>
+                        </td>
+                        <td>
+                            Guts Round
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="14:35">2:35</time>-<time datetime="15:05">3:05</time>
+                        </td>
+                        <td>
+                            Quiz Bowl
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <time datetime="15:05">3:05</time>-<time datetime="15:40">3:40</time>
+                        </td>
+                        <td>
+                            Award Ceremony
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

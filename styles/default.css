@@ -3,6 +3,7 @@
 html {
     font-family: 'Heebo', "Trebuchet MS", sans-serif;
     scroll-behavior: smooth;
+    hyphens: auto;
 }
 
 body {
