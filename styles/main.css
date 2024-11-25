@@ -15,7 +15,7 @@
 
     background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/images/AHS.jpg) center center;
+        url(/images/fall-jamac-24-group.png) center bottom -85px;
     
     background-size: cover;
 }

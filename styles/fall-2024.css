@@ -50,3 +50,39 @@ tbody tr:nth-of-type(even) {
 tbody tr:last-of-type {
     border-bottom: 2px solid rgb(88, 88, 183);
 }
+
+/* Winners Formatting */
+
+.individual-winners, .team-winners {
+    display: flex;
+    gap: max(10px, 2vw);
+    padding-bottom: 20px
+}
+
+.winners-wrapper {
+    padding: 15px 30px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.individual-winners .winners-wrapper {
+    background-color: rgb(88, 88, 183);
+}
+
+.team-winners .winners-wrapper {
+    background-color: rgb(211, 79, 79);
+}
+
+.winners-wrapper ul {
+    padding-block: 2vh;
+}
+
+.winners-wrapper ol {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.winners-wrapper ol li {
+    padding-block: 2px;
+}
