@@ -2,22 +2,44 @@
 
 /* Main Banner */
 
-.main-banner {
-    width: 100vw;
-    height: 50vh;
+@media screen and (min-width: 900px) {
+    .main-banner {
+        width: 100vw;
+        height: 50vh;
 
-    padding-block: 7vh;
-    max-width: 100%;
-    margin-bottom: 10vh;
-    
-    display: grid;
-    text-align: center;
+        padding-block: 7vh;
+        max-width: 100%;
+        margin-bottom: 10vh;
+        
+        display: grid;
+        text-align: center;
 
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/images/fall-jamac-24-group.png) center bottom -85px;
-    
-    background-size: cover;
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(/images/fall-jamac-24-group.png) center bottom -85px;
+        
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-banner {
+        width: 100vw;
+        height: 50vh;
+
+        padding-block: 7vh;
+        max-width: 100%;
+        margin-bottom: 10vh;
+        
+        display: grid;
+        text-align: center;
+
+        background:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(/images/fall-jamac-24-group-900.png) center bottom;
+        
+        background-size: cover;
+    }
 }
 
 .main-banner h1 {
