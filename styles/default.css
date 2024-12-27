@@ -28,6 +28,10 @@ a:visited {
     outline: 2px solid white;
 }
 
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
 main *:focus {
     outline: 2px solid black;
 }
