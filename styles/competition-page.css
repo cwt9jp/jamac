@@ -55,12 +55,15 @@ tbody tr:last-of-type {
 
 .individual-winners, .team-winners {
     display: flex;
+    flex-wrap: wrap;
     gap: max(10px, 2vw);
     padding-bottom: 20px
 }
 
 .winners-wrapper {
     padding: 15px 30px;
+    min-width: 150px;
+    max-width: 250px;
     color: white;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
