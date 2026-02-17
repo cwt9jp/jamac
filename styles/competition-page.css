@@ -5,7 +5,7 @@
 iframe {
     margin-top: auto;
     width: min(450px, calc(90vw - 5rem));
-    height: 70vh;
+    height: 100vh;
 }
 
 /* Table */
